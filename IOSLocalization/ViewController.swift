@@ -7,14 +7,18 @@
 //
 
 import UIKit
-
+var num: Int = 2
 class ViewController: UIViewController {
-
+    @IBOutlet weak var messageLbel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        messageLbel.text = NSLocalizedString("button_pressed \(num)", comment: "")
+    }
+    
 }
 
